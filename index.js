@@ -1,32 +1,29 @@
-let celsius = 25;
-let fahrenheit = (celsius * 9/5) + 32;
-console.log(`Температура в Цельсіях: ${celsius}°C`);
-console.log(`Температура в Фаренгейтах: ${fahrenheit}°F`);
+const celsius = 20;
+const fahrenheit = 1.8 * celsius + 32;
+console.log(fahrenheit);
 
 
-let daysInMonth = 30;
-let hoursInMonth = daysInMonth * 24;
-let minutesInMonth = hoursInMonth * 60;
-console.log(`Кількість днів у місяці: ${daysInMonth}`);
-console.log(`Кількість годин у місяці: ${hoursInMonth}`);
-console.log(`Кількість хвилин у місяці: ${minutesInMonth}`);
+let days = 28;
+let hours = days * 24;
+let minutes = days * hours * 60;
+console.log(minutes);
+console.log(hours);
+console.log(days);
 
 
 let health = 100;
-let energy = 75;
-let damage = 20;
-let energyLoss = 15;
-health -= damage;
-energy -= energyLoss;
-console.log(`Рівень здоров'я гравця: ${health}`);
-console.log(`Рівень енергії гравця: ${energy}`);
+let damage = 70;
+let hp = "Зниження здоровля";
+let newHealth = health - damage;
+console.log(`Зниження здоровля ${hp}. ${(health / damage) * 10}HP.`);
 
 
-let purchaseAmount = 200;
-let discount = 0.10;
-let discountedAmount = purchaseAmount * (1 - discount);
-console.log(`Сума покупки до знижки: ${purchaseAmount}`);
-console.log(`Сума покупки після знижки: ${discountedAmount}`);
+let price = 240;
+let get = 500;
+let zdacha = get - price;
+console.log(price);
+console.log(get);
+console.log(zdacha) / 10;
 
 
 let floatingNumber = 7.85;
@@ -37,27 +34,27 @@ console.log(`Число після округлення до меншого: ${r
 
 let stringWithFloat = "123.45";
 let floatNumber = parseFloat(stringWithFloat);
-console.log(`Рядок: ${stringWithFloat}`);
-console.log(`Десяткове число: ${floatNumber}`);
+console.log(`${stringWithFloat}`);
+console.log(`${floatNumber}`);
 
 
 let stringWithInteger = "12345";
 let integerNumber = parseInt(stringWithInteger, 10);
-console.log(`Рядок: ${stringWithInteger}`);
-console.log(`Ціле число: ${integerNumber}`);
+console.log(`${stringWithInteger}`);
+console.log(`${integerNumber}`);
 
 
 let number = 144;
 let squareRoot = Math.sqrt(number);
-console.log(`Число: ${number}`);
-console.log(`Квадратний корінь числа: ${squareRoot}`);
+console.log(`${number}`);
+console.log(`${squareRoot}`);
 
 
 let integerValue = 12345;
 let stringWithNumber = "67890";
 let parsedInteger = parseInt(stringWithNumber, 10);
 let stringFromInteger = integerValue.toString();
-console.log(`Рядок з числом: ${stringWithNumber}`);
-console.log(`Перетворений на ціле число: ${parsedInteger}`);
-console.log(`Цілочисельне значення: ${integerValue}`);
-console.log(`Перетворене на рядок: ${stringFromInteger}`);
+console.log(`${stringWithNumber}`);
+console.log(`${parsedInteger}`);
+console.log(`${integerValue}`);
+console.log(`${stringFromInteger}`);
